@@ -1,0 +1,16 @@
+title: Développeur Logiciel
+timeStart: 2018
+timeEnd: Présent
+description: Je construis un système pour favoriser la sûreté et l’efficacité
+  des industries. Le système prend des géopositions générées à partir
+  d'appareils IOT et traite les données en fonction d'un ensemble de règles et
+  de conditions pour détecter les dangers potentiels. Si un danger est trouvé,
+  nous avisons les personnes d'intérêt à l'aide d'une alarme, un courriel ou
+  tout autre moyen à notre disposition.
+techUsed:
+  - Typescript
+  - Node.js
+  - React
+  - GraphQL
+  - MQTT
+  - MongoDB

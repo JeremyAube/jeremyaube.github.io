@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "../molecules/Header";
-import "../global.css";
+import Header from "src/components/organism/Header";
+import "src/global.css";
 
 interface Props {
 	children: React.ReactNode;

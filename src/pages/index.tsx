@@ -1,18 +1,12 @@
 import React from "react";
 
 import Layout from "src/components/templates/Layout";
-import ProjectCard from "src/components/organism/ProjectInfo";
+import ExperienceBloc from "src/components/organism/ExperienceBloc";
 
 export default function IndexPage() {
 	return (
 		<Layout>
-			<h1>Expérience</h1>
-			<ProjectCard
-				company="Flexlite"
-				description="test"
-				timeStart="2018"
-				position="software developer"
-			/>
+			<ExperienceBloc />
 		</Layout>
 	);
 }
