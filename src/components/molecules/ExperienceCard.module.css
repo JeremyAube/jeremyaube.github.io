@@ -24,3 +24,8 @@
 .project p:first-of-type {
 	margin-top: 1em;
 }
+
+.project a {
+	display: inline-block;
+	margin: 0.5rem 0;
+}

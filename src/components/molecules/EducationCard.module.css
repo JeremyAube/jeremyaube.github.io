@@ -1,0 +1,20 @@
+.eduCard {
+	display: grid;
+	grid-template-areas:
+		"title time"
+		"school school";
+	align-items: baseline;
+}
+
+.eduCard h2 {
+	grid-area: title;
+}
+
+.eduCard p:first-of-type {
+	grid-area: time;
+	text-align: end;
+}
+
+.eduCard p:last-of-type {
+	grid-area: school;
+}

@@ -10,7 +10,7 @@ export default function TagList(props: Props) {
 	return (
 		<section className={css.tagList}>
 			{props.tags.map(tag => (
-				<Tag tag={tag} />
+				<Tag tag={tag} key={tag} />
 			))}
 		</section>
 	);

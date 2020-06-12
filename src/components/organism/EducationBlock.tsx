@@ -20,7 +20,7 @@ export default function EducationBlock() {
 	return (
 		<InfoBlock title="Éducation">
 			{data.allEducationYaml.nodes.map(edu => (
-				<EducationCard {...edu} />
+				<EducationCard {...edu} key={edu.degree + edu.school + edu.yearStart} />
 			))}
 		</InfoBlock>
 	);

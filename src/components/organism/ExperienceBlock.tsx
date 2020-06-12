@@ -23,7 +23,7 @@ export default function ExperienceBlock() {
 	return (
 		<InfoBlock title="Expérience">
 			{data.allExperienceYaml.nodes.map(exp => (
-				<ExperienceCard {...exp} />
+				<ExperienceCard {...exp} key={exp.title + exp.company} />
 			))}
 		</InfoBlock>
 	);

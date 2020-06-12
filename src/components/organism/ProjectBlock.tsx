@@ -20,7 +20,7 @@ export default function ProjectBlock() {
 	return (
 		<InfoBlock title="Projets en cours">
 			{data.allProjectYaml.nodes.map(project => (
-				<ProjectCard {...project} />
+				<ProjectCard {...project} key={project.title} />
 			))}
 		</InfoBlock>
 	);
