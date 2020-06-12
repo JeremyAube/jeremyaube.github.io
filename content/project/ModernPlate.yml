@@ -1,0 +1,9 @@
+list_id: 2
+completed: false
+title: Modern Plate
+description: Modern Plate est une application mobile créer pour aider les petits
+  producteurs à trouvé une clientèle pour leurs récoltes.
+techStack:
+  - Dart
+  - Flutter
+  - Firebase

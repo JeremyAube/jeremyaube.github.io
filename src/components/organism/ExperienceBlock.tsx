@@ -1,11 +1,11 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import css from "./ExperienceBloc.module.css";
+import InfoBlock from "src/components/molecules/InfoBlock";
 import ExperienceCard from "src/components/molecules/ExperienceCard";
 
-export default function ExperienceBloc() {
+export default function ExperienceBlock() {
 	const data: expQueryType = useStaticQuery(graphql`
-		query MyQuery {
+		query {
 			allExperienceYaml(sort: { fields: list_id, order: ASC }) {
 				nodes {
 					company
@@ -20,23 +20,12 @@ export default function ExperienceBloc() {
 		}
 	`);
 
-	console.log(data);
-
 	return (
-		<section className={css.experience}>
-			<h1>Expérience</h1>
+		<InfoBlock title="Expérience">
 			{data.allExperienceYaml.nodes.map(exp => (
-				<ExperienceCard
-					title={exp.title}
-					description={exp.description}
-					company={exp.company}
-					link={exp.link}
-					timeStart={exp.timeStart}
-					timeEnd={exp.timeEnd}
-					techUsed={exp.techUsed}
-				/>
+				<ExperienceCard {...exp} />
 			))}
-		</section>
+		</InfoBlock>
 	);
 }
 

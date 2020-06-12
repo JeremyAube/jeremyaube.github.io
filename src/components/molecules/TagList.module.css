@@ -1,0 +1,5 @@
+.tagList {
+	margin: 0.5rem 0;
+	display: flex;
+	gap: 5px;
+}

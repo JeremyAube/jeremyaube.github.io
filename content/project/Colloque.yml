@@ -1,0 +1,11 @@
+list_id: 3
+completed: false
+title: Colloque
+description: Cette application permet la gestion des inscriptions et des
+  paiements pour un colloque organisé par un organisme à but non lucratif comme
+  levé de fond. Les utilisateurs peuvent s’inscrire aux différentes conférences,
+  choisir leur menu et compléter le paiement en ligne.
+techStack:
+  - Dart
+  - Flutter
+  - Firebase

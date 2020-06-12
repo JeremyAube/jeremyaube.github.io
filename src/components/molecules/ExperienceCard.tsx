@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { BriefcaseIcon, CalendarIcon } from "@primer/octicons-react";
 import css from "./ExperienceCard.module.css";
 import Card from "src/components/atoms/Card";
-import Tag from "src/components/atoms/Tag";
+import TagList from "./TagList";
 
 interface Props {
 	title: string;
@@ -20,7 +20,7 @@ export default function ProjectInfo(props: Props) {
 		<Card>
 			<article className={css.project}>
 				<header>
-					<h3>{props.title}</h3>
+					<h2>{props.title}</h2>
 					<p>
 						<CalendarIcon />
 						{props.timeStart} - {props.timeEnd ? props.timeEnd : "Present"}
@@ -33,12 +33,7 @@ export default function ProjectInfo(props: Props) {
 				<p>{props.description}</p>
 
 				{props.link ? <Link to={props.link}>{props.link}</Link> : null}
-
-				<section className={css.techStack}>
-					{props.techUsed?.map(tech => (
-						<Tag tag={tech} />
-					))}
-				</section>
+				{props.techUsed ? <TagList tags={props.techUsed} /> : null}
 			</article>
 		</Card>
 	);
