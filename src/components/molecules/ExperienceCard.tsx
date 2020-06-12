@@ -23,7 +23,7 @@ export default function ProjectInfo(props: Props) {
 					<h2>{props.title}</h2>
 					<p>
 						<CalendarIcon />
-						{props.timeStart} - {props.timeEnd ? props.timeEnd : "Present"}
+						{props.timeStart} - {props.timeEnd ? props.timeEnd : "Présent"}
 					</p>
 					<p>
 						<BriefcaseIcon />

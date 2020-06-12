@@ -1,5 +1,7 @@
 .tagList {
 	margin: 0.5rem 0;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 5px;
+	align-items: baseline;
 }
