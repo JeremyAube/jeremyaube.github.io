@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jérémy Aubé`,
+    description:
+      "Je suis développeur logiciel avec un large éventail de compétences. Je valorise le travail d’équipe et j’aime apprendre de mes coéquipiers. Ma capacité d'apprendre rapidement me permet de rester agile et de m'adapter au monde de la technologie en constante évolution.",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,14 +21,9 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
-}
+};
