@@ -1,0 +1,26 @@
+.project header {
+	display: grid;
+	grid-template-areas:
+		"title time"
+		"company company";
+	align-items: baseline;
+}
+
+.project header h3 {
+	grid-area: title;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+.project header p:first-of-type {
+	grid-area: time;
+	text-align: end;
+}
+
+.project header p:last-of-type {
+	grid-area: company;
+}
+
+.project p:first-of-type {
+	margin-top: 1em;
+}
