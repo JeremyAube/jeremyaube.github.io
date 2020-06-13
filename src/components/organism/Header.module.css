@@ -5,3 +5,61 @@
 .header * {
 	text-align: center;
 }
+
+.header section:last-child {
+	display: flex;
+	text-align: start;
+}
+
+.header section:last-child a {
+	text-decoration: none;
+}
+
+@media (max-width: 901px) {
+	.header section:last-child {
+		flex-flow: row;
+		width: 100%;
+		justify-content: center;
+		gap: 5rem;
+	}
+
+	.header section:last-child a,
+	.header section:last-child p {
+		text-align: center;
+		border-radius: 50px;
+		border: 1px solid lightgray;
+		padding: 0.3rem 0.8rem;
+	}
+}
+
+@media (min-width: 901px) {
+	.header section:last-child {
+		flex-flow: column;
+	}
+
+	.header section:last-child p,
+	.header section:last-child a {
+		text-align: start;
+		padding: 1rem 0.5rem;
+		position: relative;
+	}
+
+	.header section:last-child a:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border: 1px solid gray;
+	}
+
+	.header section:last-child p:after,
+	.header section:last-child a:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border: 1px solid gray;
+	}
+}

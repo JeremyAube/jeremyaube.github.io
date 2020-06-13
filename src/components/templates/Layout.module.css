@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 	.layout {
 		grid-template-areas:
 			"header"
@@ -7,7 +7,7 @@
 	}
 }
 
-@media (min-width: 801px) {
+@media (min-width: 901px) {
 	.layout {
 		grid-template-areas:
 			"header content"
