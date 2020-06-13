@@ -1,9 +1,0 @@
-list_id: 1
-completed: false
-title: Litou
-description: Litou est une application web permettant aux enfants d’améliorer
-  leurs capacités en français à l’aide d'exercice personnalisé.
-techStack:
-  - Dart
-  - Flutter
-  - Firebase

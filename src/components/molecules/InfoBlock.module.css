@@ -1,9 +1,0 @@
-.infoBlock {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.infoBlock h1 {
-	font-size: 2.5em;
-}
