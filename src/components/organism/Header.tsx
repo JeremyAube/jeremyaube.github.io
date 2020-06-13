@@ -7,12 +7,7 @@ export default function Header() {
 		<header className={css.header}>
 			<h1>Jérémy Aubé</h1>
 			<h4>Développeur Logiciel</h4>
-			<section>
-				<header hidden>
-					<h2>Contact Information</h2>
-				</header>
-				<p> (418) 520-7088</p>
-			</section>
+			<p> (418) 520-7088</p>
 			<section>
 				<header hidden>
 					<h2>Social Links</h2>

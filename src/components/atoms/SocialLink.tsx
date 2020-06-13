@@ -1,16 +1,20 @@
 import React from "react";
+import css from "./SocialLink.module.css";
 import Img, { FixedObject } from "gatsby-image";
 
 interface Props {
-	img: FixedObject;
-	imgAlt: string;
+	name: string;
+	image: FixedObject;
+	alt: string;
 	url: string;
 }
 
 export default function SocialLink(props: Props) {
 	return (
-		<a href={props.url}>
-			<Img fixed={props.img} alt={props.imgAlt} />
-		</a>
+		<div className={css.link}>
+			<a href={props.url}>
+				<Img fixed={props.image} alt={props.alt} />
+			</a>
+		</div>
 	);
 }

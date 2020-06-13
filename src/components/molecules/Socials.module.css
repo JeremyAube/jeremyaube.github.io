@@ -1,0 +1,6 @@
+.socials {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin: 1rem 0;
+}

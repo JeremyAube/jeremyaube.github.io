@@ -1,0 +1,12 @@
+.link {
+	display: inline-block;
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	border-radius: 25%;
+}
+
+.link a {
+	padding: 0;
+	margin: 0;
+}
