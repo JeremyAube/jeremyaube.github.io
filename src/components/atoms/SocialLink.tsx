@@ -12,7 +12,7 @@ interface Props {
 export default function SocialLink(props: Props) {
 	return (
 		<div className={css.link}>
-			<a href={props.url}>
+			<a href={props.url} target="_blank">
 				<Img fixed={props.image} alt={props.alt} />
 			</a>
 		</div>
