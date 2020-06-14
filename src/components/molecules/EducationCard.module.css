@@ -1,8 +1,5 @@
 .eduCard {
 	display: grid;
-	grid-template-areas:
-		"title time"
-		"school school";
 	align-items: baseline;
 }
 
@@ -12,9 +9,33 @@
 
 .eduCard p:first-of-type {
 	grid-area: time;
-	text-align: end;
 }
 
 .eduCard p:last-of-type {
 	grid-area: school;
+}
+
+@media (max-width: 550px) {
+	.eduCard {
+		grid-template-areas:
+			"title"
+			"time"
+			"school";
+	}
+
+	.eduCard p:first-of-type {
+		text-align: start;
+		margin: 0.5rem 0;
+	}
+}
+
+@media (min-width: 551px) {
+	.eduCard {
+		grid-template-areas:
+			"title time"
+			"school school";
+	}
+	.eduCard p:first-of-type {
+		text-align: end;
+	}
 }

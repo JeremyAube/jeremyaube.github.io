@@ -16,7 +16,8 @@
 }
 
 .layout {
-	margin: 5%;
+	margin: 0 auto;
+	padding: 50px;
 	max-width: 1080px;
 	display: grid;
 	gap: 50px;

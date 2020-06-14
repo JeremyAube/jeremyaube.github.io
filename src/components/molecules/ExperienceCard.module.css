@@ -1,15 +1,11 @@
 .project header {
 	display: grid;
-	grid-template-areas:
-		"title time"
-		"company company";
 	align-items: baseline;
 }
 
 .project header h3 {
 	grid-area: title;
 	text-transform: capitalize;
-	margin: 0;
 }
 
 .project header p:first-of-type {
@@ -21,11 +17,37 @@
 	grid-area: company;
 }
 
-.project p:first-of-type {
+.project > p:first-of-type {
 	margin-top: 1em;
 }
 
 .project a {
 	display: inline-block;
 	margin: 0.5rem 0;
+}
+
+@media (max-width: 700px) {
+	.project header {
+		grid-template-areas:
+			"title"
+			"time"
+			"company";
+	}
+
+	.project header p:first-of-type {
+		text-align: start;
+		margin: 0.5rem 0;
+	}
+}
+
+@media (min-width: 701px) {
+	.project header {
+		grid-template-areas:
+			"title time"
+			"company company";
+	}
+
+	.project header p:first-of-type {
+		text-align: end;
+	}
 }
